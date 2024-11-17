@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: pdf-reverser-service
+spec:
+  selector:
+    app: pdf-reverser
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080
+  type: LoadBalancer  # Exposes the service externally

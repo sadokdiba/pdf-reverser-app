@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Reverse PDF Pages</title>
+</head>
+<body>
+    <div style="text-align: center; margin-top: 50px;">
+        <h1>Reverse PDF Pages</h1>
+        <form method="post" action="/api/pdf/reverse" enctype="multipart/form-data">
+            <input type="file" name="file" accept="application/pdf" required>
+            <br><br>
+            <button type="submit">Upload and Reverse</button>
+        </form>
+    </div>
+</body>
+</html>

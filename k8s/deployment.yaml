@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pdf-reverser
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: pdf-reverser
+  template:
+    metadata:
+      labels:
+        app: pdf-reverser
+    spec:
+      containers:
+        - name: pdf-reverser
+          image: sadokdiba/pdf-reverser:latest  # Replace with your Docker Hub image
+          ports:
+            - containerPort: 8080
