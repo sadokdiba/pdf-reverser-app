@@ -1,4 +1,4 @@
-package com.example.demo.service;
+package com.sadokdiba.pdfreverser.service;
 
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.pdmodel.PDPageTree;

@@ -1,12 +1,13 @@
-package com.example.demo.controller;
+package com.sadokdiba.pdfreverser.controller;
 
-import com.example.demo.service.PDFService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.InputStreamResource;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
+
+import com.sadokdiba.pdfreverser.service.PDFService;
 
 import java.io.File;
 import java.io.FileInputStream;
